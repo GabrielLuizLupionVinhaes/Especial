@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #ffffff, #800000);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.titulo {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ff66b2;
+  margin-top: 50px;
+}
+
+.titulo2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #f3344e;
+  margin-bottom: 50px;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.bloco {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.foto {
+  width: 100%;
+  height: auto;
+  max-width: 350px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.mensagem {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .titulo {
+    font-size: 2.5rem;
+  }
+
+  .mensagem {
+    font-size: 1rem;
+  }
+
+  .foto {
+    max-width: 90%;
+  }
+}
+
+.botao-romantico {
+  background: linear-gradient(to right, #ff4d79, #ff99a9);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px rgba(255, 77, 121, 0.5);
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.botao-romantico:hover {
+  background: linear-gradient(to right, #ff99a9, #ff4d79);
+  transform: scale(1.05);
+  box-shadow: 0px 8px 15px rgba(255, 77, 121, 0.7);
+}
+
+.coracao {
+  position: fixed;
+  bottom: -50px;
+  width: 30px;
+  height: 30px;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/833/833472.png"); 
+  background-size: cover;
+  animation: subir 5s linear forwards;
+  opacity: 0.7;
+}
+
+@keyframes subir {
+  0% {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+/* Estilos para o container dos GIFs */
+.gifs-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os GIFs quebrem para a próxima linha */
+  justify-content: center;
+  gap: 20px; /* Espaço entre os GIFs */
+  margin-top: 30px;
+  max-width: 600px; /* Limita a largura do container */
+  width: 100%;
+}
+
+/* Estilos para cada container de GIF */
+.gif-container {
+  width: calc(50% - 10px); /* 2 GIFs por linha com espaço entre eles */
+  max-width: 200px; /* Tamanho máximo de cada GIF */
+  height: auto;
+  overflow: hidden;
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.gif-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que o GIF cubra todo o container */
+}

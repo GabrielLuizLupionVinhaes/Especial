@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedido Especial</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="titulo">EU TE AMO<br>EMILLY!</div>
+  <audio controls>
+    <source src="Fotinhas/musica.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+  </div>
+
+  <!-- Container principal para os GIFs -->
+  <div class="gifs-container">
+    <div class="gif-container">
+      <img src="Fotinhas/d.gif" alt="GIF romântico">
+    </div>
+    <div class="gif-container">
+      <img src="Fotinhas/u.gif" alt="GIF romântico">
+    </div>
+    <div class="gif-container">
+      <img src="Fotinhas/b.gif" alt="GIF romântico">
+    </div>
+    <div class="gif-container">
+      <img src="Fotinhas/k.gif" alt="GIF romântico">
+    </div>
+  </div>
+
+  <button class="botao-romantico" onclick="history.back()">Voltar</button>
+
+  <!-- Elemento de áudio -->
+  <audio id="background-music" loop muted>
+    <source src="Fotinhas/musica.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+
+  <!-- Botão de fallback para tocar música -->
+  <button id="play-button" style="display: none;">Tocar Música</button>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
